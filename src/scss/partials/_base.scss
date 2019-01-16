@@ -4,6 +4,10 @@ body {
   line-height: 1.6;
   background: $white;
   font-size: 0.875rem;
+
+  @include mq {
+    font-size: 1.125rem;
+  }
 }
 
 h1,
@@ -21,6 +25,10 @@ h1 {
 
 h2 {
   @include sans-serif($fs: 2rem);
+
+  @include mq {
+    font-size: 3.1rem;
+  }
 }
 
 img {

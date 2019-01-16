@@ -1,6 +1,6 @@
 .about {
-  @extend %container;
-  @extend %clearfix;
+  @include container;
+  @include clearfix;
   margin-top: 5em;
   margin-bottom: 5em;
 }
@@ -30,6 +30,10 @@
   .about img {
     grid-column: port / img;
     grid-row: 1 / 2;
+
+    @include mq {
+      grid-row: 1 / 4;
+    }
   }
 
   .about-title {
@@ -41,5 +45,9 @@
   .about-subtitle,
   .about-text {
     grid-column: port / port;
+
+    // @include mq {
+    //   grid-column: image-end / port-end;
+    // }
   }
 }

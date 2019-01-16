@@ -14,7 +14,7 @@ export default class Contact extends Component {
 
   render() {
     return (
-      <div>
+      <div className="contact">
         <h1>Contact Me</h1>
         <form action="">
           <label htmlFor="name">
@@ -29,6 +29,7 @@ export default class Contact extends Component {
             Message:
             <textarea onChange={this.handleChange} id="message" />
           </label>
+          <input className="contactSubmit" type="submit" value="SEND" />
         </form>
       </div>
     );
