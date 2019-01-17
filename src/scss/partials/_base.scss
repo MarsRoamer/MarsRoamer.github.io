@@ -21,6 +21,9 @@ h1 {
   color: $accent;
   line-height: 1;
   font-size: 3.125rem;
+  @include mq {
+    font-size: 4.25rem;
+  }
 }
 
 h2 {

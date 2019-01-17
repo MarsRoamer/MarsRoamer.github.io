@@ -2,6 +2,10 @@
   text-align: center;
   background: $light-grey;
   padding: 5em 0;
+
+  h1 {
+    font-size: 4rem;
+  }
 }
 .portfolio-items {
   display: flex;
@@ -102,11 +106,12 @@
   .portfolio-items {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    // grid-gap: 1em;
+    max-width: 75%;
+    grid-gap: 0.5em;
 
-    // @include mq {
-    //   grid-template-columns: repeat(4, 1fr);
-    // }
+    @include mq {
+      // grid-template-columns: repeat(3, 1fr);
+    }
   }
 
   .portfolio-item.featured {

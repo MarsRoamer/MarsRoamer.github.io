@@ -1,11 +1,12 @@
 import React from "react";
 import myPhoto from "../images/myphoto.jpeg";
+import comp1 from "../images/comp1.jpeg";
 
 export default function About() {
   return (
     <div className="about">
-      <img id="about-img" src={myPhoto} alt="" />
-      <h1 className="about-title">Jonathan's Portfolio</h1>
+      <img id="about-img" src={comp1} alt="" />
+      <h1 className="about-title">Jonathan Tiede</h1>
       <h2 className="about-subtitle">Full Stack Developer</h2>
       <div className="about-text">
         <p>

@@ -7,6 +7,7 @@
 
 .about-title {
   margin-bottom: 0.25em;
+  font-weight: $fw-n;
 }
 
 .about-subtitle {
@@ -14,6 +15,11 @@
 }
 
 .about img {
+  min-height: 15em;
+
+  // max-height: 25em;
+
+  // border-radius: 50%;
   @media (min-width: 40em) {
     float: left;
     margin-right: 1em;
@@ -26,10 +32,12 @@
     grid-template-columns:
       [port-start] minmax(6em, 1fr) [name-start] minmax(6em, 1fr)
       [img-end] 2fr [port-end];
+    grid-column-gap: 0.5em;
   }
   .about img {
     grid-column: port / img;
     grid-row: 1 / 2;
+    // min-width: 30em;
 
     @include mq {
       grid-row: 1 / 4;
@@ -46,8 +54,15 @@
   .about-text {
     grid-column: port / port;
 
-    // @include mq {
-    //   grid-column: image-end / port-end;
-    // }
+    @include mq {
+      grid-column: image-end / port-end;
+    }
+  }
+
+  .about-subtitle {
+    grid-row: 2 / 3;
+  }
+  .about-text {
+    grid-row: 3 / 4;
   }
 }
