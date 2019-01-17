@@ -1,6 +1,6 @@
 import React from "react";
 import wodtracker from "../images/wodtracker.png";
-import Particles from "react-particles-js";
+// import Particles from "react-particles-js";
 
 const particleParams = {
   particles: {
