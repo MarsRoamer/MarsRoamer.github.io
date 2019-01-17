@@ -11,55 +11,86 @@ import react from "./images/react.png";
 import "./App.scss";
 //
 
+// const particleParams = {
+//   particles: {
+//     number: {
+//       value: 150,
+//       density: {
+//         enable: true,
+//         value_area: 800
+//       }
+//     },
+
+//     size: {
+//       value: 2,
+//       random: true,
+//       anim: {
+//         speed: 20,
+//         size_min: 0.3
+//       }
+//     },
+
+//     color: {
+//       value: "#3f87c6"
+//     }
+//   }
+// };
+
 const particleParams = {
   particles: {
     number: {
-      value: 150,
+      value: 8,
       density: {
         enable: true,
         value_area: 800
       }
     },
-    size: {
-      value: 3,
-      random: true,
-      anim: {
-        speed: 20,
-        size_min: 0.3
-      }
+    line_linked: {
+      enable: false
     },
-    // shape: {
-    //   type: "image",
-    //   image: {
-    //     src: "../source/images/comp.jpeg",
-    //     width: 100,
-    //     height: 100
-    //   }
-    // },
+    move: {
+      speed: 1,
+      out_mode: "out"
+    },
+    shape: {
+      type: "images",
+      images: [
+        {
+          src:
+            "https://nodejs.org/static/images/logos/nodejs-new-pantone-black.png",
+          height: 15,
+          width: 18
+        },
+        {
+          src:
+            "https://pngimage.net/wp-content/uploads/2018/06/react-logo-png-1.png",
+          height: 20,
+          width: 25
+        },
+        {
+          src:
+            "https://upload.wikimedia.org/wikipedia/commons/1/16/Ruby_on_Rails-logo.png",
+          height: 20,
+          width: 25
+        }
+      ]
+    },
     color: {
-      value: "#3f87c6"
+      value: "#CCC"
+    },
+    size: {
+      value: 20,
+      random: false,
+      anim: {
+        enable: true,
+        speed: 4,
+        size_min: 10,
+        sync: false
+      }
     }
-  }
+  },
+  retina_detect: false
 };
-
-// const particleParams = {
-//   particles: {
-//     number: {
-//       value: 50
-//     },
-//     size: {
-//       random: true
-//     }
-//   },
-//   interactivity: {
-//     events: {
-//       onhover: {
-//         enable: true,
-//         mode: "repulse"
-//       }
-//     }
-//   }
-// };
 
 class App extends Component {
   render() {
